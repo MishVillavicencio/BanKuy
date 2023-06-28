@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BanKuy.LoginUserPass">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="Start" Background="#2f4f4f" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image x:Name="imgIcono" Source="logoBank"  WidthRequest="60"  Grid.Column="0" HorizontalOptions="Start" Margin="10,0"/>
+                <Label Text="BanKuy"  Grid.Column="1" VerticalTextAlignment="Center" FontSize="Large" 
+                       FontAttributes="Bold" TextColor="White"  />
+            </Grid>
+            <StackLayout>
+                <Label Text="Ingresa tu usuario y contraseña" TextColor="#CC4B00" FontSize="Medium" Margin="50" HorizontalOptions="CenterAndExpand"></Label>
+                <Frame Padding="0" Margin="70,0,70,0" BorderColor="#2f4f4f">
+                    <Entry x:Name="txtCedula" FontSize="12" Placeholder="Usuario" Margin="30,10" FontAttributes="Italic"/>
+                </Frame>
+                <Frame Padding="0" Margin="70,20" BorderColor="#2f4f4f">
+                    <Entry x:Name="txtNombre" FontSize="12" Placeholder="Contraseña" Margin="30,10" FontAttributes="Italic"/>
+                </Frame>
+                <Button Margin="120,30,120,0" Text="Ingresar" HeightRequest="50" BackgroundColor="#2f4f4f" 
+                        TextColor="White" FontAttributes="Bold" CornerRadius="30" Clicked="btnIngresarUser_Clicked" x:Name="btnIngresarUser"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

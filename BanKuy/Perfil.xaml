@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BanKuy.Perfil">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="Start" Background="#2f4f4f" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image x:Name="imgIcono" Source="logoBank"  WidthRequest="60"  Grid.Column="0" HorizontalOptions="Start"/>
+                <Label Text="BanKuy"  Grid.Column="1" VerticalTextAlignment="Center" FontSize="Large" 
+                       FontAttributes="Bold" TextColor="White"  />
+            </Grid>
+
+            <Label Text="Perfil" TextColor="Black" FontSize="20" FontAttributes="Bold" Margin="10" HorizontalTextAlignment="Center"/>
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E0ECEE" Padding="10" HasShadow="False" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="perfil" WidthRequest="40" HorizontalOptions="Start" Margin="20,0"/>
+                    <Label Text="Nombre Completo" FontAttributes="Bold" Margin="0,-50" FontSize="16" TextColor="Black"  HorizontalOptions="CenterAndExpand"></Label>
+                    <Label HorizontalOptions="CenterAndExpand" Margin="10,45" Text="Karina Loor Diaz" FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E0ECEE" Padding="10" HasShadow="False" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="telefono" WidthRequest="40" HorizontalOptions="Start" Margin="20,0"/>
+                    <Label Text="Celular" FontAttributes="Bold" Margin="0,-50" FontSize="16" TextColor="Black"  HorizontalOptions="CenterAndExpand"></Label>
+                    <Label HorizontalOptions="CenterAndExpand" Margin="10,45" Text="0986358641" FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E0ECEE" Padding="10" HasShadow="False" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="correo" WidthRequest="40" HorizontalOptions="Start" Margin="20,0"/>
+                    <Label Text="Correo" FontAttributes="Bold" Margin="0,-50" FontSize="16" TextColor="Black"  HorizontalOptions="CenterAndExpand"></Label>
+                    <Label HorizontalOptions="CenterAndExpand" Margin="10,45" Text="karina@gmail.com" FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Nota: Recuerda que tus datos personales los puedes cambiar únicamente acercándote a las oficinas de la entidad bancaria. " FontAttributes="Bold" Margin="70,50" HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
